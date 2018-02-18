@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get "/dashboard", :to => "users#index"
 
   get "/rsvp", :to => "guests#new"
+
+  post "/guests", :to => "guests#create"
 end
