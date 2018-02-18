@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :guest do
-    name "MyText"
+    name "Eupanifahorious"
     accompanying 1
   end
 end
