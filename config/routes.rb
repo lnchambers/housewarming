@@ -1,11 +1,7 @@
 Rails.application.routes.draw do
-  get 'users/new'
+  root "welcome#index"
 
-  get 'users/create'
+  get "/dashboard", :to => "users#index"
 
-  get 'user/new'
-
-  get 'user/create'
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get "/rsvp", :to => "guests#new"
 end

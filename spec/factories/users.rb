@@ -1,6 +1,7 @@
 FactoryBot.define do
-  factory :user do
-    name "Coming"
-    guests 1
+  factory :admin, class: User do
+    name "Admin"
+    password "Admin"
+    role 1
   end
 end
