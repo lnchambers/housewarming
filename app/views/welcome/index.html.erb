@@ -1,3 +1,5 @@
 Welcome to Ludabode!
 
 <%= link_to "RSVP", rsvp_path %>
+<%= render partial: "login" if !current_user %>
+<%= link_to "Dashboard", dashboard_path if current_admin? %>
