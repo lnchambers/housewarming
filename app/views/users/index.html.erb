@@ -1,0 +1,5 @@
+Total Guests: <%= @guests.count + @guests.total_accompanying %>
+
+<% @guests.each do |guest| %>
+  <p><%= guest.name %> is coming and bringing <%= guest.accompanying %> guests.</p>
+<% end %>
