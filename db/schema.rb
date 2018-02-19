@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20180218175938) do
 
   create_table "guests", force: :cascade do |t|
     t.text "name"
-    t.integer "accompanying", default: 1
+    t.integer "accompanying", default: 0
   end
 
   create_table "users", force: :cascade do |t|
